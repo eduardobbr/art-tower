@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Art Tower</title>
+
+    <!-- links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/responsive-index.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>Art Tower</title>
+</head>
+
+<body>
+
+    <header class="header" id="header-top">
+        <div class="header-container">
+
+            <!--NAV DESKTOP-->
+            <ul class="nav-list-desktop">
+                <li class="nav-item" style="padding-right: 20px;">
+                    <img src="./img/logo.png" class="logo" style="width: 200px; margin-top: 15px;" alt="Logo">
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about-us" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#facilitar" class="nav-link">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#function" class="nav-link">Contato</a>
+                </li>
+            </ul>
+
+            <!--NAV MOBILE-->
+            <ul class="nav-mobile">
+                <li class="nav-item" style="padding-left: 10px;">
+                    <a href="#" class="nav-hamburguer">
+                        <div class="hamburguer"></div>
+                    </a>
+                </li>
+                <li class="nav-item" style="z-index: 999;">
+                    <img src="./img/logo.png" class="logo" style="width: 200px; margin-left: 15%; margin-top: 15px;"
+                        alt="">
+                </li>
+            </ul>
+
+            <!--NAV ITEMS MOBILE-->
+            <ul class="nav-list-mobile">
+                <li class="nav-item-mobile">
+                    <a href="{{ route('dashboard')}}" class="nav-link-mobile">Início</a>
+                </li>
+                <li class="nav-item-mobile">
+                    <a href="#about-us" class="nav-link-mobile">Sobre</a>
+                </li>
+                <li class="nav-item-mobile">
+                    <a href="#facilitar" class="nav-link-mobile">Serviços</a>
+                </li>
+                <li class="nav-item-mobile">
+                    <a href="#function" class="nav-link-mobile">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--Header-->
+
+
+
+    <!--BANNER-->
+    <section>
+        <div class="banner-area">
+            <div class="single-banner">
+                <div class="banner-img">
+                    <picture>
+                        <source media="(max-width: 580px)"
+                            srcset="https://blog.intelbras.com.br/wp-content/uploads/2021/08/tecnologia-no-canteiro-de-obras.jpg"
+                            type="image/jpeg">
+                        <source media="(max-width: 835px)"
+                            srcset="https://blog.intelbras.com.br/wp-content/uploads/2021/08/tecnologia-no-canteiro-de-obras.jpg"
+                            type="image/jpeg">
+                        <img src="https://blog.intelbras.com.br/wp-content/uploads/2021/08/tecnologia-no-canteiro-de-obras.jpg"
+                            alt="">
+                    </picture>
+                </div>
+                <div class="banner-text">
+
+                    <p data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Art Tower</p>
+
+                    <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Melhore a estética de seu
+                        edificio
+                    </h2>
+
+                    <p class="banner-btn"><a href="#function">Faça um orçamento já</a></p>
+                </div>
+            </div>
+            <div class="single-banner">
+                <div class="banner-img">
+                    <picture>
+                        <source media="(max-width: 580px)"
+                            srcset="https://construpoint.construmarket.com.br/wp-content/uploads/2022/03/O-que-e-um-Diario-de-Obra-e1701458708424.jpg"
+                            type="image/jpeg">
+                        <source media="(max-width: 835px)"
+                            srcset="https://construpoint.construmarket.com.br/wp-content/uploads/2022/03/O-que-e-um-Diario-de-Obra-e1701458708424.jpg"
+                            type="image/jpeg">
+                        <img src="https://construpoint.construmarket.com.br/wp-content/uploads/2022/03/O-que-e-um-Diario-de-Obra-e1701458708424.jpg"
+                            alt="">
+                    </picture>
+                </div>
+                <div class="banner-text">
+                    <p>Art Tower</p>
+                    <h2>Mantenha seu edificio atualizado</h2>
+                    <p class="banner-btn"><a href="#function">Faça um orçamento já</a></p>
+                </div>
+            </div>
+            <div class="single-banner">
+                <div class="banner-img">
+                    <picture>
+                        <source media="(max-width: 580px)"
+                            srcset="https://www.fonsi.com.br/wp-content/uploads/2023/03/O-Passo-a-Passo-da-Pintura-Predial_lowres.jpg"
+                            type="image/jpeg">
+                        <source media="(max-width: 835px)"
+                            srcset="https://www.fonsi.com.br/wp-content/uploads/2023/03/O-Passo-a-Passo-da-Pintura-Predial_lowres.jpg"
+                            type="image/jpeg">
+                        <img src="https://www.fonsi.com.br/wp-content/uploads/2023/03/O-Passo-a-Passo-da-Pintura-Predial_lowres.jpg"
+                            alt="">
+                    </picture>
+                </div>
+                <div class="banner-text">
+                    <p>Art Tower</p>
+                    <h2>A aparência</h2>
+                    <p class="banner-btn"><a href="#function">Faça um orçamento já</a></p>
+                </div>
+            </div>
+            <div class="single-banner">
+                <div class="banner-img">
+                    <picture>
+                        <source media="(max-width: 600px)"
+                            srcset="https://constru360.com.br/wp-content/uploads/2019/04/obras.jpg" type="image/jpeg">
+                        <source media="(max-width: 835px)"
+                            srcset="https://constru360.com.br/wp-content/uploads/2019/04/obras.jpg" type="image/jpeg">
+                        <img src="https://constru360.com.br/wp-content/uploads/2019/04/obras.jpg" alt="">
+                    </picture>
+
+                </div>
+                <div class="banner-text">
+                    <p>Controle Total para sua Obra</p>
+                    <h2>Explore todas as funcionalidades</h2>
+                    <p class="banner-btn"><a href="#function">Fazer orçamento</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--BANNER-->
+
+
+    <!--UM POUCO SOBRE NÓS-->
+    <section class="hero" id="about-us">
+        <div class="container" id="hero">
+            <div style="margin: 0px 20px 25px;">
+                <p class="sub" style="margin-bottom: 40px;">Art Tower</p>
+                <h2 style="margin-top: 2px; font-size: 25px;">Nossa empresa, denominada Art Tower, é especializada em
+                    fornecer serviços
+                    abrangentes de manutenção de prédios para uma variedade de clientes, incluindo condomínios
+                    residenciais, prédios comerciais e instituições públicas. Com anos de experiência no setor, nos
+                    tornamos uma referência confiável para soluções de manutenção predial de alta qualidade, venha fazer
+                    um orçamento conosco e torne o seu edifico um exemplar!</p>
+                    <ul class="circulo" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>Pintura
+                        </li>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>Lavagem</li>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>Manutenção
+                        </li>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>Acabamento
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+    <!--UM POUCO SOBRE NÓS-->
+
+
+
+    <!--CERTIFICAÇÕES-->
+    <section class="cs" style="margin-top: 10rem;">
+        <div class="con">
+            <div class="cards card-1">
+                <!-- card-body -->
+                <div class="card-body">
+                    <p class="cards-texto">CERTIFICAÇÃO</p>
+                    <h3 class="card-local">Certificações de Qualidade</h3>
+                    <p class="cards-texto">
+                        ISO 9001 - Garantia de Qualidade
+                    </p>
+                </div>
+                <!-- card-body -->
+            </div>
+
+            <div class="cards card-1">
+                <!-- card-body -->
+                <div class="card-body">
+                    <p class="cards-texto">LOCALIDADE DE TRABALHO</p>
+                    <h3 class="card-local">Curitiba - Paraná</h3>
+                </div>
+                <!-- card-body -->
+            </div>
+
+            <div class="cards card-1">
+                <!-- card-body -->
+                <div class="card-body">
+                    <p class="cards-texto">EXPERIÊNCIA</p>
+                    <h3 class="card-local">Mais de 7 Anos de Experiência</h3>
+                </div>
+                <!-- card-body -->
+            </div>
+        </div>
+    </section>
+    <!--CERTIFICAÇÕES-->
+
+
+    <!--TÍTULO (COMO PODEMOS TE AJUDAR)-->
+    <section class="title" id="facilitar">
+        <div>
+            <p style="margin-bottom: 20px;">Art Tower</p>
+            <h3>Nossos Serviços</h3>
+        </div>
+    </section>
+    <!--TÍTULO (COMO PODEMOS TE AJUDAR)-->
+
+
+    <!--CARDS-->
+    <section>
+        <div class="con">
+            <!-- Card 1 -->
+            <div class="card card-1">
+                <!-- card-header -->
+                <div class="card-header">
+                    <img src="img/foto2.jpg" class="card-img" />
+                </div>
+                <!-- card-header -->
+
+                <!-- card-body -->
+                <div class="card-body">
+                    <h3 class="card-local">Pintura</h3>
+                    <p class="card-texto">
+                        Nossa equipe de profissionais qualificados em pintura predial está pronta para revitalizar a
+                        aparência exterior e interior de edifícios. Utilizamos técnicas avançadas e materiais de alta
+                        qualidade para garantir resultados duradouros e esteticamente agradáveis.
+                    </p>
+                </div>
+                <!-- card-body -->
+            </div>
+            <!-- Card 1 -->
+
+            <!-- Card 2 -->
+            <div class="card card-2">
+                <!-- card-header -->
+                <div class="card-header">
+                    <img src="img/foto3.jpg" style="width: 100%; height: 200%;" />
+                </div>
+                <!-- card-header -->
+
+                <!-- card-body -->
+                <div class="card-body">
+                    <h3 class="card-local">Lavagem</h3>
+                    <p class="card-texto">
+                        A limpeza regular é essencial para manter a integridade estrutural e a estética dos prédios.
+                        Oferecemos serviços abrangentes de lavagem, que incluem limpeza de fachadas, remoção de sujeira
+                        e detritos, limpeza de calhas e muito mais.
+                    </p>
+                </div>
+                <!-- card-body -->
+            </div>
+            <!-- Card 2 -->
+
+            <!-- Card 3 -->
+            <div class="card card-3">
+                <!-- card-header -->
+                <div class="card-header">
+                    <img src="https://static.wixstatic.com/media/88d7c5_48994b9735894fa99a47e4a2da7d6e95~mv2.jpg/v1/fill/w_980,h_639,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/88d7c5_48994b9735894fa99a47e4a2da7d6e95~mv2.jpg"
+                        class="card-img" />
+                </div>
+                <!-- card-header -->
+
+                <!-- card-body -->
+                <div class="card-body">
+                    <h3 class="card-local">Manutenção</h3>
+                    <p class="card-texto">
+                        Para garantir que os prédios permaneçam funcionais e seguros
+                        ao longo do tempo, nossa equipe realiza inspeções detalhadas para identificar e resolver
+                        quaisquer problemas potenciais, desde pequenos reparos até grandes projetos de manutenção
+                        preventiva.
+                    </p>
+                </div>
+                <!-- card-body -->
+            </div>
+            <!-- Card 3 -->
+
+            <!-- Card 4 -->
+            <div class="card card-2">
+                <!-- card-header -->
+                <div class="card-header">
+                    <img src="https://ogimg.infoglobo.com.br/in/17315658-63e-e8c/FT1086A/2015-843429610-2015082438852.jpg_20150824.jpg"
+                        class="card-img" />
+                </div>
+                <!-- card-header -->
+
+                <!-- card-body -->
+                <div class="card-body">
+                    <h3 class="card-local">Acabamento</h3>
+                    <p class="card-texto">
+                        Os detalhes finais são essenciais para aperfeiçoar a estética e a funcionalidade dos prédios.
+                        Oferecemos uma ampla gama de serviços de acabamento, incluindo aplicação de verniz, selamento de
+                        superfícies, instalação de rodapés e muito mais
+                    </p>
+                </div>
+                <!-- card-body -->
+            </div>
+            <!-- Card 4 -->
+        </div>
+    </section>
+    <!--CARDS -->
+
+
+    <!--NÚMEROS-->
+    <section class="Info" style="margin-top: 10rem;">
+        <div class="con2">
+            <div class="cardis card-1">
+                <!-- card-body -->
+                <div class="card-body">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span class="num" data-val="7">0</span>
+                    <span class="text">Anos no mercado</span>
+                </div>
+                <!-- card-body -->
+            </div>
+
+            <div class="cardis card-1">
+                <!-- card-body -->
+                <div class="card-body">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span class="num" data-val="5">0</span>
+                    <span class="text">Media Anual</span>
+                </div>
+                <!-- card-body -->
+            </div>
+
+            <div class="cardis card-1">
+                <!-- card-body -->
+                <div class="card-body">
+                    <i class="fa-solid fa-building"></i>
+                    <span class="num" data-val="37">0</span>
+                    <span class="text">Obras finalizadas</span>
+                </div>
+                <!-- card-body -->
+            </div>
+            <!-- card-body -->
+        </div>
+        </div>
+    </section>
+    <!--NÚMEROS-->
+
+
+    <!--SOLICITE UM ORÇAMENTO-->
+    <section id="function">
+        <div class="conteiner">
+            <div class="conteudo">
+                <i class="fa-solid fa-envelope "></i>
+                <p>Quer adquirir nossos serviços? Entre em contato conosco!</p>
+                <a href="https://web.whatsapp.com/send?phone=5541999295591" class="btn">Entrar em contato</a>
+            </div>
+        </div>
+    </section>
+    <!--SOLICITE UM ORÇAMENTO-->
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="contayner">
+            <div class="rows">
+                <div class="footer-col">
+                    <h4>Home</h4>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#about-us">Sobre</a></li>
+                        <li><a href="#facilitar">Serviços</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#facilitar">Pintura</a></li>
+                        <li><a href="#facilitar">Lavagem</a></li>
+                        <li><a href="#facilitar">Manutenção</a></li>
+                        <li><a href="#facilitar">Acabamento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-phone" style="font-size: 1.5rem;"></i> (41)
+                                99929-5591</a>
+                        </li>
+                        <li><a href="#"><i class="fa-solid fa-envelope" style="font-size: 1.5rem;"></i>
+                                pedropedroso.augusto@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social Medias</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ed_bryan_rbk/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER-->
+
+    <!--BOTÃO WHATSAPP-->
+    <a href="https://web.whatsapp.com/send?phone=5541999295591" class="wpp-link" rel="stylesheet" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+    <!--BOTÃO WHATSAPP-->
+
+    <!--TO-TOP-->
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <!--TO-TOP-->
+
+
+    <!--SCRIPTS-->
+    <script src="js/scriptS.js"></script>
+    <script src="js/to-top.js"></script>
+    <script src="js/mobile-navbar.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/2de34c3ab2.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1500,
+            once: true,
+        });
+    </script>
+
+    <script>
+        $('.banner-area').slick({
+            autoplay: true,
+            speed: 800,
+            arrows: false,
+            dots: true,
+            fade: true
+        });
+    </script>
+
+</body>
+
+</html>
